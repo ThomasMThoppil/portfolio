@@ -46,13 +46,13 @@ export function TopHeader({
           borderColor="var(--accent)"
           shadowColor="var(--accent-soft)"
         />
-        <div className="flex flex-col leading-[1.2]">
+        <div className="flex flex-col leading-[1.15]">
           <span
             className="serif font-semibold whitespace-nowrap"
             style={{
-              fontSize: "clamp(14px, 1.6vw, 17px)",
+              fontSize: "clamp(17px, 2vw, 22px)",
               color: "var(--text)",
-              letterSpacing: "-0.01em",
+              letterSpacing: "-0.02em",
             }}
           >
             Varun Dubey

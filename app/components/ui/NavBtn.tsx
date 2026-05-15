@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useEffect, useRef } from "react";
 import type { NavBtnProps } from "@/app/types";
 
 export function NavBtn({
@@ -12,12 +12,20 @@ export function NavBtn({
   onHoverChange,
 }: NavBtnProps) {
   const [hov, setHov] = useState(false);
+  const canHover = useRef(false);
+
+  useEffect(() => {
+    // Only enable hover effects on devices that actually support hover
+    canHover.current = matchMedia("(hover: hover) and (pointer: fine)").matches;
+  }, []);
 
   const handleEnter = () => {
+    if (!canHover.current) return;
     setHov(true);
     onHoverChange?.(true);
   };
   const handleLeave = () => {
+    if (!canHover.current) return;
     setHov(false);
     onHoverChange?.(false);
   };
