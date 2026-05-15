@@ -55,7 +55,10 @@ body {
   transition: background 0.4s, color 0.4s;
 }
 
-body, a, button, span {
+/* Hide native cursor when custom cursor is active.
+   The .no-cursor class is toggled by JS — present on hover-capable
+   devices, removed on touch interaction. */
+body.no-cursor, .no-cursor a, .no-cursor button, .no-cursor span {
   cursor: none !important;
 }
 

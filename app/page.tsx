@@ -30,6 +30,25 @@ export default function Portfolio() {
     document.documentElement.setAttribute("data-theme", dark ? "dark" : "light");
   }, [dark]);
 
+  // Toggle .no-cursor on <body> for hover-capable devices.
+  // Removed on touch interaction so the native cursor reappears.
+  useEffect(() => {
+    const isTouchDevice = matchMedia("(hover: none) and (pointer: coarse)").matches;
+    if (isTouchDevice) return;
+
+    document.body.classList.add("no-cursor");
+
+    const onTouchStart = () => {
+      document.body.classList.remove("no-cursor");
+    };
+    window.addEventListener("touchstart", onTouchStart, { passive: true });
+
+    return () => {
+      window.removeEventListener("touchstart", onTouchStart);
+      document.body.classList.remove("no-cursor");
+    };
+  }, []);
+
   return (
     <div
       className="min-h-screen"

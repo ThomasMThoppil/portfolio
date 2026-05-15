@@ -1,5 +1,7 @@
 "use client";
 
+import { useEffect, useState, useRef } from "react";
+
 interface CursorProps {
   smooth: { x: number; y: number };
   raw: { x: number; y: number };
@@ -7,6 +9,35 @@ interface CursorProps {
 }
 
 export function Cursor({ smooth, raw, hovering }: CursorProps) {
+  const [visible, setVisible] = useState(false);
+  const disabled = useRef(false);
+
+  useEffect(() => {
+    // Permanently hide custom cursor once a touch interaction is detected.
+    // This handles pure touch devices and hybrid laptops switching to touch.
+    const onTouchStart = () => {
+      disabled.current = true;
+      setVisible(false);
+    };
+
+    const isTouchDevice = matchMedia("(hover: none) and (pointer: coarse)").matches;
+    if (isTouchDevice) {
+      disabled.current = true;
+      setVisible(false);
+      return;
+    }
+
+    // Show cursor for hover-capable devices
+    setVisible(true);
+    window.addEventListener("touchstart", onTouchStart, { passive: true });
+
+    return () => {
+      window.removeEventListener("touchstart", onTouchStart);
+    };
+  }, []);
+
+  if (!visible) return null;
+
   return (
     <>
       {/* Outer ring */}
