@@ -77,7 +77,7 @@ export default function Portfolio() {
       <main style={{ paddingTop: "clamp(58px, 7vw, 70px)" }}>
         <Hero dark={dark} go={go} setHovering={setHovering} />
         <About setHovering={setHovering} />
-        <Skills setHovering={setHovering} />
+        <Skills dark={dark} setHovering={setHovering} />
         <ExperienceSection setHovering={setHovering} />
         <ProjectsSection dark={dark} setHovering={setHovering} />
         <Connect setHovering={setHovering} />

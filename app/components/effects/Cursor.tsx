@@ -44,14 +44,15 @@ export function Cursor({ smooth, raw, hovering }: CursorProps) {
       <div
         className="fixed z-[9999] pointer-events-none rounded-full"
         style={{
-          left: smooth.x - 18,
-          top: smooth.y - 18,
-          width: 36,
-          height: 36,
+          left: smooth.x - 19,
+          top: smooth.y - 19,
+          width: 38,
+          height: 38,
           border: "1.5px solid var(--accent)",
-          opacity: hovering ? 0.9 : 0.4,
-          transform: `scale(${hovering ? 1.7 : 1})`,
-          transition: "transform 0.3s ease, opacity 0.3s ease",
+          background: hovering ? "var(--accent-soft)" : "transparent",
+          opacity: hovering ? 1 : 0.45,
+          transform: `scale(${hovering ? 1.85 : 1})`,
+          transition: "transform 0.32s cubic-bezier(0.34,1.56,0.64,1), opacity 0.3s ease, background 0.3s ease",
         }}
       />
       {/* Inner dot */}
@@ -63,8 +64,9 @@ export function Cursor({ smooth, raw, hovering }: CursorProps) {
           width: 6,
           height: 6,
           background: "var(--accent)",
-          opacity: hovering ? 0 : 0.9,
-          transition: "opacity 0.2s",
+          opacity: hovering ? 0 : 0.95,
+          transform: `scale(${hovering ? 0.4 : 1})`,
+          transition: "opacity 0.2s, transform 0.2s",
         }}
       />
     </>
