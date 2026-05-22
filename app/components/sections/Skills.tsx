@@ -1,7 +1,6 @@
 "use client";
 
 import { Reveal } from "@/app/components/ui/Reveal";
-// import { SkillGlobe } from "@/app/components/ui/SkillGlobe"; // globe paused — see git history to restore
 import { SkillIcon } from "@/app/components/ui/SkillIcon";
 import { skillGroups } from "@/app/data/skills";
 
