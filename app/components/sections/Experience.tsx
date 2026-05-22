@@ -21,42 +21,10 @@ export function ExperienceSection({ setHovering }: ExperienceSectionProps) {
         </Reveal>
 
         {/* Timeline */}
-        <div style={{ position: "relative" }}>
-          {/* vertical line */}
-          <div
-            className="hidden sm:block"
-            style={{
-              position: "absolute",
-              left: 7,
-              top: 6,
-              bottom: 6,
-              width: 1,
-              background: "linear-gradient(var(--border-2), var(--border) 70%, transparent)",
-            }}
-          />
-
-          <div className="flex flex-col" style={{ gap: 14 }}>
+        <div className="flex flex-col" style={{ gap: 14 }}>
             {experience.map((job, i) => (
               <Reveal key={job.company} delay={i * 0.12}>
-                <div
-                  className="sm:pl-9"
-                  style={{ position: "relative" }}
-                >
-                  {/* dot */}
-                  <span
-                    className="timeline-dot hidden sm:block"
-                    style={{
-                      position: "absolute",
-                      left: 1,
-                      top: 30,
-                      width: 13,
-                      height: 13,
-                      borderRadius: 99,
-                      background: i === 0 ? "var(--accent)" : "var(--surface-2)",
-                      border: "1.5px solid var(--accent)",
-                    }}
-                  />
-
+                <div>
                   <div
                     className="lift rounded-[20px]"
                     onMouseEnter={() => setHovering(true)}
@@ -111,7 +79,6 @@ export function ExperienceSection({ setHovering }: ExperienceSectionProps) {
               </Reveal>
             ))}
           </div>
-        </div>
       </div>
     </section>
   );

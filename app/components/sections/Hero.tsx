@@ -9,7 +9,7 @@ interface HeroProps {
 }
 
 const STATS = [
-  { value: "3+", label: "Years shipping\nproduction systems" },
+  { value: "4+", label: "Years shipping\nproduction systems" },
   { value: "1500+", label: "Servers monitored\nin real time" },
   { value: "150k+", label: "Docs indexed for\nRAG retrieval" },
   { value: "60s→.5s", label: "Endpoint latency\noptimized" },

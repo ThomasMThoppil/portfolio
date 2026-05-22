@@ -184,6 +184,9 @@ body.no-cursor, .no-cursor a, .no-cursor button, .no-cursor span {
 .lift:hover { transform: translateY(-6px); }
 
 /* ─── Marquee (skills ticker) ─────────────────────────────────────────────── */
+.marquee-wrap {
+  overflow: hidden;
+}
 .marquee {
   display: flex;
   width: max-content;
@@ -327,6 +330,7 @@ body.no-cursor, .no-cursor a, .no-cursor button, .no-cursor span {
 
 /* ─── Header nav: responsive ──────────────────────────────────────────────── */
 @media (max-width: 768px) {
+  .header-nav { gap: 0 !important; }
   .header-nav button:not(:last-child) { display: none !important; }
   .side-nav { display: none !important; }
   .mobile-bar { display: flex !important; }
