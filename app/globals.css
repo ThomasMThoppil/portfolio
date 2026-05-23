@@ -4,45 +4,45 @@
 /* Set via JS on the :root / [data-theme="dark"] element                       */
 
 :root {
-  --bg:          #f7f3ea;
-  --bg-alt:      #efe8da;
-  --surface:     #fffdf9;
-  --surface-2:   #f3ede0;
-  --text:        #1c1409;
-  --muted:       #786046;
-  --accent:      #9e6535;
-  --accent-2:    #c08348;
-  --grad-end:    #b07840;
-  --accent-soft: rgba(158, 101, 53, 0.08);
-  --border:      rgba(158, 101, 53, 0.13);
-  --border-2:    rgba(158, 101, 53, 0.28);
-  --nav-bg:      rgba(247, 243, 234, 0.82);
-  --btn-text:    #fffdf9;
-  --tag-text:    #6e3e18;
-  --shadow:      0 24px 70px rgba(60, 40, 20, 0.10);
-  --glow:        rgba(158, 101, 53, 0.12);
-  --grid-line:   rgba(158, 101, 53, 0.055);
+  --bg:          #fafafa;
+  --bg-alt:      #f3f0ff;
+  --surface:     #ffffff;
+  --surface-2:   #ede9fe;
+  --text:        #0f0b1e;
+  --muted:       #6d5e8a;
+  --accent:      #9333ea;
+  --accent-2:    #0891b2;
+  --grad-end:    #06b6d4;
+  --accent-soft: rgba(147, 51, 234, 0.08);
+  --border:      rgba(147, 51, 234, 0.13);
+  --border-2:    rgba(147, 51, 234, 0.28);
+  --nav-bg:      rgba(250, 250, 250, 0.85);
+  --btn-text:    #ffffff;
+  --tag-text:    #6b21a8;
+  --shadow:      0 24px 70px rgba(147, 51, 234, 0.12);
+  --glow:        rgba(147, 51, 234, 0.15);
+  --grid-line:   rgba(147, 51, 234, 0.055);
 }
 
 [data-theme="dark"] {
-  --bg:          #0a0806;
-  --bg-alt:      #0f0c09;
-  --surface:     #14100b;
-  --surface-2:   #1c150f;
-  --text:        #f0e7d8;
-  --muted:       #8a7560;
-  --accent:      #d0a06c;
-  --accent-2:    #e6bd86;
-  --grad-end:    #d4a878;
-  --accent-soft: rgba(208, 160, 108, 0.10);
-  --border:      rgba(208, 160, 108, 0.13);
-  --border-2:    rgba(208, 160, 108, 0.26);
-  --nav-bg:      rgba(10, 8, 6, 0.78);
-  --btn-text:    #0a0806;
-  --tag-text:    #dcc09a;
-  --shadow:      0 24px 70px rgba(0, 0, 0, 0.65);
-  --glow:        rgba(208, 160, 108, 0.16);
-  --grid-line:   rgba(208, 160, 108, 0.05);
+  --bg:          #08070f;
+  --bg-alt:      #0d0b18;
+  --surface:     #120f1e;
+  --surface-2:   #1a1530;
+  --text:        #f0eeff;
+  --muted:       #8b7fa8;
+  --accent:      #a855f7;
+  --accent-2:    #06b6d4;
+  --grad-end:    #22d3ee;
+  --accent-soft: rgba(168, 85, 247, 0.10);
+  --border:      rgba(168, 85, 247, 0.15);
+  --border-2:    rgba(168, 85, 247, 0.30);
+  --nav-bg:      rgba(8, 7, 15, 0.82);
+  --btn-text:    #08070f;
+  --tag-text:    #c4b5fd;
+  --shadow:      0 24px 70px rgba(168, 85, 247, 0.20);
+  --glow:        rgba(168, 85, 247, 0.22);
+  --grid-line:   rgba(168, 85, 247, 0.06);
 }
 
 /* ─── Base ────────────────────────────────────────────────────────────────── */
@@ -88,12 +88,12 @@ body.no-cursor, .no-cursor a, .no-cursor button, .no-cursor span {
 .mono  { font-family: 'JetBrains Mono', monospace; }
 
 .grad-text {
-  background: linear-gradient(110deg, var(--accent) 20%, var(--accent-2) 50%, var(--accent) 80%);
-  background-size: 220% auto;
+  background: linear-gradient(110deg, var(--accent) 0%, var(--accent-2) 55%, var(--grad-end) 100%);
+  background-size: 260% auto;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
-  animation: shimmerText 7s linear infinite;
+  animation: shimmerText 5s linear infinite;
 }
 
 @keyframes shimmerText {

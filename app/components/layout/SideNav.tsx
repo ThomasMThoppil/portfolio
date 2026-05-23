@@ -28,19 +28,19 @@ export function SideNav({ setHovering }: SideNavProps) {
         <NavBtn
           icon={<MailIcon />}
           label="Email"
-          href="mailto:varundubey771@gmail.com"
+          href="mailto:thomasthoppil98@gmail.com"
           onHoverChange={setHovering}
         />
         <NavBtn
           icon={<LinkedInIcon />}
           label="LinkedIn"
-          href="https://www.linkedin.com/in/"
+          href="https://www.linkedin.com/in/thomas-thoppil/"
           onHoverChange={setHovering}
         />
         <NavBtn
           icon={<ResumeIcon />}
           label="Resume"
-          href="https://docs.google.com/document/d/1zONOvPZMG0a4zGpZel6r0mduLhkxmYtbjl64KGY9AQI/edit?pli=1&tab=t.0"
+          href="https://drive.google.com/file/d/1KJNrKmxEaTzgw0KLFUfCAvGKsJMvBKj3/view?usp=sharing"
           onHoverChange={setHovering}
         />
       </div>

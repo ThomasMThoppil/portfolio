@@ -7,10 +7,10 @@ interface ConnectProps {
   setHovering: (v: boolean) => void;
 }
 
-const EMAIL = "varundubey771@gmail.com";
+const EMAIL = "thomasthoppil98@gmail.com";
 
 const LINKS = [
-  { label: "LinkedIn", icon: <LinkedInIcon />, href: "https://www.linkedin.com/in/" },
+  { label: "LinkedIn", icon: <LinkedInIcon />, href: "https://www.linkedin.com/in/thomas-thoppil/" },
   { label: "Email", icon: <MailIcon />, href: `mailto:${EMAIL}` },
 ] as const;
 
@@ -84,7 +84,7 @@ export function Connect({ setHovering }: ConnectProps) {
               </a>
             ))}
             <a
-              href="https://docs.google.com/document/d/1zONOvPZMG0a4zGpZel6r0mduLhkxmYtbjl64KGY9AQI/edit?pli=1&tab=t.0"
+              href="https://drive.google.com/file/d/1KJNrKmxEaTzgw0KLFUfCAvGKsJMvBKj3/view?usp=sharing"
               target="_blank"
               rel="noreferrer"
               onMouseEnter={() => setHovering(true)}

@@ -55,7 +55,7 @@ export function TopHeader({
               letterSpacing: "-0.02em",
             }}
           >
-            Varun Dubey
+            Thomas M Thoppil
           </span>
           <span
             className="mono header-subtitle"
@@ -65,7 +65,7 @@ export function TopHeader({
               letterSpacing: "0.05em",
             }}
           >
-            Senior Software Engineer
+            Senior Applied AI Scientist
           </span>
         </div>
       </div>

@@ -7,10 +7,10 @@ interface AboutProps {
 }
 
 const FACTS = [
-  { k: "Now", v: "ZS Associates", sub: "Senior SWE · Bangalore" },
-  { k: "Before", v: "Jio", sub: "SDE · Navi Mumbai" },
-  { k: "Focus", v: "Distributed + AI", sub: "Systems & LLM platforms" },
-  { k: "Style", v: "Backend-leaning", sub: "Pragmatic, resilient" },
+  { k: "Now", v: "ZS Associates", sub: "Senior Applied Scientist" },
+  { k: "Before", v: "Prudent Global", sub: "Junior Data Scientist" },
+  { k: "Focus", v: "LLMs & GenAI", sub: "Research to production" },
+  { k: "Award", v: "Client Impact", sub: "ZS Associates · 2024" },
 ];
 
 export function About({ setHovering }: AboutProps) {
@@ -28,9 +28,9 @@ export function About({ setHovering }: AboutProps) {
           <div>
             <Reveal delay={0.05}>
               <h2 className="section-title" style={{ marginBottom: 28 }}>
-                Crafting intelligent,
+                Building AI that
                 <br />
-                <em className="grad-text not-italic">resilient software.</em>
+                <em className="grad-text not-italic">actually ships.</em>
               </h2>
             </Reveal>
 
@@ -39,13 +39,12 @@ export function About({ setHovering }: AboutProps) {
                 className="leading-[1.9]"
                 style={{ color: "var(--muted)", fontSize: 16, marginBottom: 22, maxWidth: 520 }}
               >
-                I&apos;m a backend-leaning engineer with a track record across
-                distributed systems and AI platforms. At{" "}
+                I&apos;m a Senior Applied AI Scientist with 4+ years building and
+                scaling production ML systems. At{" "}
                 <strong style={{ color: "var(--text)" }}>ZS Associates</strong> I
-                build AI-powered enterprise tooling; before that at{" "}
-                <strong style={{ color: "var(--text)" }}>Jio</strong> I owned
-                large-scale cloud observability modules monitoring thousands of
-                servers in real time.
+                lead AI platform development for pharmaceutical clients — from
+                LLM-powered content verification to semi-supervised ML pipelines
+                that improved medical claims capture by 60%.
               </p>
             </Reveal>
 
@@ -54,15 +53,16 @@ export function About({ setHovering }: AboutProps) {
                 className="leading-[1.9]"
                 style={{ color: "var(--muted)", fontSize: 16, marginBottom: 32, maxWidth: 520 }}
               >
-                I care about the unglamorous parts — latency budgets, failure
-                modes, clean boundaries — because that&apos;s what lets the
-                interesting parts ship.
+                I care about the gap between research and production —
+                translating cutting-edge techniques into systems that are
+                reliable, scalable, and actually deliver measurable business
+                impact.
               </p>
             </Reveal>
 
             <Reveal delay={0.26}>
               <a
-                href="https://docs.google.com/document/d/1zONOvPZMG0a4zGpZel6r0mduLhkxmYtbjl64KGY9AQI/edit?pli=1&tab=t.0"
+                href="https://drive.google.com/file/d/1KJNrKmxEaTzgw0KLFUfCAvGKsJMvBKj3/view?usp=sharing"
                 target="_blank"
                 rel="noreferrer"
                 onMouseEnter={() => setHovering(true)}

@@ -23,7 +23,7 @@ export function ExperienceSection({ setHovering }: ExperienceSectionProps) {
         {/* Timeline */}
         <div className="flex flex-col" style={{ gap: 14 }}>
             {experience.map((job, i) => (
-              <Reveal key={job.company} delay={i * 0.12}>
+              <Reveal key={`${job.company}-${i}`} delay={i * 0.12}>
                 <div>
                   <div
                     className="lift rounded-[20px]"

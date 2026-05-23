@@ -25,8 +25,8 @@ export function AvatarImage({
     >
       {!error && (
         <img
-          src="/images/varun.jpg"
-          alt="Varun Dubey"
+          src="/images/thomas.jpg"
+          alt="Thomas M Thoppil"
           onError={() => setError(true)}
           className="block h-full w-full object-cover object-top"
         />
@@ -43,7 +43,7 @@ export function AvatarImage({
             letterSpacing: "-0.02em",
           }}
         >
-          VD
+          TT
         </div>
       )}
     </div>

@@ -9,10 +9,10 @@ interface HeroProps {
 }
 
 const STATS = [
-  { value: "4+", label: "Years shipping\nproduction systems" },
-  { value: "1500+", label: "Servers monitored\nin real time" },
-  { value: "150k+", label: "Docs indexed for\nRAG retrieval" },
-  { value: "60s→.5s", label: "Endpoint latency\noptimized" },
+  { value: "4+", label: "Years building\nproduction ML systems" },
+  { value: "60%+", label: "Claims capture\nimprovement via ML" },
+  { value: "90%", label: "Inference runtime\nreduced on AWS" },
+  { value: "40%", label: "LLM latency\ncut via prompting" },
 ];
 
 export function Hero({ dark, go, setHovering }: HeroProps) {
@@ -59,7 +59,7 @@ export function Hero({ dark, go, setHovering }: HeroProps) {
           <div>
             <Reveal delay={0.05}>
               <p className="eyebrow" style={{ marginBottom: 22 }}>
-                Senior Software Engineer · ZS Associates
+                Senior Applied AI Scientist · ZS Associates
               </p>
             </Reveal>
 
@@ -74,9 +74,9 @@ export function Hero({ dark, go, setHovering }: HeroProps) {
                   marginBottom: 24,
                 }}
               >
-                Building systems
+                Turning research
                 <br />
-                <em className="grad-text not-italic">that scale.</em>
+                <em className="grad-text not-italic">into impact.</em>
               </h1>
             </Reveal>
 
@@ -90,9 +90,9 @@ export function Hero({ dark, go, setHovering }: HeroProps) {
                   marginBottom: 36,
                 }}
               >
-                Backend-leaning engineer working across distributed systems,
-                AI/LLM platforms and high-performance microservices — turning
-                gnarly infrastructure into things that just work.
+                Applied AI scientist bridging research and production — building
+                LLM platforms, ML pipelines, and intelligent systems that deliver
+                measurable business outcomes at enterprise scale.
               </p>
             </Reveal>
 

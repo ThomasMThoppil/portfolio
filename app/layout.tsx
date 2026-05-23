@@ -2,8 +2,8 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "Varun Dubey - Portfolio",
-  description: "Personal portfolio of Varun Dubey",
+  title: "Thomas M Thoppil — Portfolio",
+  description: "Senior Applied AI Scientist — building production ML systems and LLM platforms.",
   icons: {
     icon: [
       { url: "/favicon.ico", sizes: "any" },
@@ -32,7 +32,7 @@ export default function RootLayout({
         <link
           rel="icon"
           type="image/svg+xml"
-          href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%230e0b08'/%3E%3Ctext x='16' y='22' text-anchor='middle' font-family='%27DM Sans%27%2CArial%2Csans-serif' font-weight='700' font-size='16' fill='%23c49a6c'%3EVD%3C/text%3E%3C/svg%3E"
+          href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%2308070f'/%3E%3Ctext x='16' y='22' text-anchor='middle' font-family='%27DM Sans%27%2CArial%2Csans-serif' font-weight='700' font-size='16' fill='%23a855f7'%3ETT%3C/text%3E%3C/svg%3E"
         />
       </head>
       <body className="antialiased">

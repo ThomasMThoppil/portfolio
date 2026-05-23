@@ -2,43 +2,43 @@ import type { Project } from "@/app/types";
 
 export const projects: Project[] = [
   {
-    name: "Dream Source",
-    emoji: "🌙",
-    status: "Live",
+    name: "Pharma LLM Platform",
+    emoji: "🤖",
+    status: "Work Project",
     description:
-      "AI dream journaling — agentic Python backend (Groq) that uncovers patterns and symbols across your dream history.",
-    tags: ["Python", "Groq", "AI Agents", "Next.js"],
-    link: "https://dream-source.app",
-    bar: "#a07050",
+      "AI platform serving major pharmaceutical companies — LLM-powered content analysis, validation, and compliance at enterprise scale.",
+    tags: ["LLMs", "FastAPI", "Microservices", "JWT"],
+    link: "#",
+    bar: "#4a7c6a",
   },
   {
-    name: "Dream Source POC",
-    emoji: "✨",
-    status: "Archived",
+    name: "Medical Claims ML",
+    emoji: "🧬",
+    status: "Work Project",
     description:
-      "The original POC that sparked Dream Source. Early AI dream interpretation experiment, not actively maintained.",
-    tags: ["Python", "AI", "Dream Analysis"],
-    link: "https://dream-source-poc.vercel.app",
-    bar: "#7a6248",
+      "Semi-supervised ML (PU learning) solution increasing medical claims capture by 60%, improving oncology targeting precision for pharma clients.",
+    tags: ["PyTorch", "Semi-Supervised Learning", "Python", "MLOps"],
+    link: "#",
+    bar: "#6a4a7c",
   },
   {
-    name: "Quill — AI Review",
+    name: "AWS Data Enrichment Pipeline",
+    emoji: "⚡",
+    status: "Work Project",
+    description:
+      "Automated enrichment pipeline on AWS reducing model inference runtime by 90% via optimized step-functions and data processing workflows.",
+    tags: ["AWS", "Step Functions", "Python", "Data Pipelines"],
+    link: "#",
+    bar: "#7c6a4a",
+  },
+  {
+    name: "RAG Document Analysis",
     emoji: "📄",
     status: "Work Project",
     description:
-      "Medical-legal document review platform with sentence-level RAG referencing across 150k+ docs.",
-    tags: ["LangGraph", "RAG", "FastAPI", "pgvector"],
+      "GenAI proof of concept using RAG and generative models to extract structured insights from unstructured client documents.",
+    tags: ["RAG", "Generative AI", "LLMs", "NLP"],
     link: "#",
-    bar: "#6a5840",
-  },
-  {
-    name: "Network Intelligence",
-    emoji: "📡",
-    status: "Work Project",
-    description:
-      "Real-time network monitoring for 1500+ government servers — KPI tracking, Kafka streams, topology graphs.",
-    tags: ["FastAPI", "Kafka", "Elasticsearch"],
-    link: "#",
-    bar: "#8c7050",
+    bar: "#4a5a7c",
   },
 ];
